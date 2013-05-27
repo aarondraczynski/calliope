@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+
+    <title>Calliope</title>
+    <meta name="description" content="Shows public transit arrivals with big-ass numbers.">
+    <meta name="keywords" content="nextbus, nextmuni, bus, train, arrival, prediction, trip, planning">
+    <meta name="author" content="Aaron Draczynski">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--[if lt IE 9]> 
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,700" />
+    <link rel="stylesheet" href="calliope.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="calliope-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="calliope-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="calliope-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="calliope-144.png" />
+    <link rel="apple-touch-startup-image" href="calliope-768.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait)" />
+    <link rel="apple-touch-startup-image" href="calliope-748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape)" />
+    <link rel="apple-touch-startup-image" href="calliope-1536.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="calliope-2048.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)" />
+  </head>
+  <body class="run">
+    <section id="big" role="main">
+      <div class="box">
+
+        <div id="route-1" class="route blue">
+          <p class="route-predictions">
+            <span class="no-predictions">&mdash;</span>
+          </p>
+          <p class="route-name light">
+            <span class="route-id" id="route-1-id"></span>
+            <span class="route-direction" id="route-1-direction"></span>
+          </p>
+          <p class="route-stop light" id="route-1-stop"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="small">
+      <div class="box">
+
+        <div id="route-2" class="route yellow">
+          <p class="route-predictions">
+            <span class="no-predictions">&mdash;</span>
+          </p>
+          <p class="route-name light">
+            <span class="route-id" id="route-2-id"></span>
+            <span class="route-direction" id="route-2-direction"></span>
+          </p>
+          <p class="route-stop light" id="route-2-stop"></p>
+        </div>
+
+      </div>
+      <div class="box">
+ 
+        <div id="route-3" class="route green">
+          <p class="route-predictions">
+            <span class="no-predictions">&mdash;</span>
+          </p>
+          <p class="route-name light">
+            <span class="route-id" id="route-3-id"></span>
+            <span class="route-direction" id="route-3-direction"></span>
+          </p>
+          <p class="route-stop light" id="route-3-stop"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="calliope.js"></script>
+  </body>
+</html>
